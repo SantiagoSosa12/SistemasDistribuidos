@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SantiagoSosa12/SistemasDistribuidos/issues"
   },
-  "homepage": "https://github.com/SantiagoSosa12/SistemasDistribuidos#readme"
+  "homepage": "https://github.com/SantiagoSosa12/SistemasDistribuidos#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

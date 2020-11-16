@@ -26,3 +26,14 @@ app.post('/ClasicosDelRock/', (req,res) => {
     console.log(req.body.name)
     res.send('Usted esta enviando Equipos de Futbol')
 })
+
+//{
+//  "pokemons":[
+//    {
+//        "name": "Snorlax"
+//    },
+//    {
+//        "name": "Pickachu"
+//    }
+//    ]
+//}

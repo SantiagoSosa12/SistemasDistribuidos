@@ -1,7 +1,4 @@
 
-
-/serverStatus/logger.txt
-
 const readline = require("readline"),
     fs = require("fs"),
     NOMBRE_ARCHIVO = "/serverStatus/logger.txt";
@@ -15,14 +12,3 @@ lector.on("line", linea => {
 });
 
 
-
-//{
-//  "pokemons":[
-//    {
-//        "name": "Snorlax"
-//    },
-//    {
-//        "name": "Pickachu"
-//    }
-//    ]
-//}

@@ -1,4 +1,6 @@
 
+var lista = [];
+
 const readline = require("readline"),
     fs = require("fs"),
     NOMBRE_ARCHIVO = "/home/serverone/serverStatus/logger.txt";
@@ -8,7 +10,7 @@ let lector = readline.createInterface({
 });
 
 lector.on("line", linea => {
-    console.log("Tenemos una línea:", linea);
+    lista.push(linea);
 });
 
-
+console.log(lista.pop);

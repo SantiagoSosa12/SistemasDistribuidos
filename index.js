@@ -8,11 +8,12 @@ let lector = readline.createInterface({
     input: fs.createReadStream(NOMBRE_ARCHIVO)
 });
 
-var lista = ["Primera Linea"];
+
 
 lector.on("line", linea => {
     console.log(linea);
     lista.push(linea);
 });
 
+var lista = ["Primera Linea"];
 console.log(lista[lista.length - 1] + " Ultima linea");

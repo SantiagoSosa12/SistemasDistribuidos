@@ -10,7 +10,8 @@ let lector = readline.createInterface({
 });
 
 lector.on("line", linea => {
+    console.log(linea);
     lista.push(linea);
 });
 
-console.log(lista[lista.length - 1]);
+console.log(lista[lista.length - 1] + " Ultima linea");

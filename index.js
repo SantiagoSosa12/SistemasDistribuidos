@@ -1,5 +1,4 @@
 
-var lista = ["Primera Linea"];
 
 const readline = require("readline"),
     fs = require("fs"),
@@ -8,6 +7,8 @@ const readline = require("readline"),
 let lector = readline.createInterface({
     input: fs.createReadStream(NOMBRE_ARCHIVO)
 });
+
+var lista = ["Primera Linea"];
 
 lector.on("line", linea => {
     console.log(linea);

@@ -9,7 +9,6 @@ const fs= require('fs');
 app.get('/', (req, res) => {
   let archivo = fs.readFileSync('/serverStatus/logger.txt', 'utf-8');
   console.log(archivo);
-  res.send(archivo);
 })
 
 app.listen(port, () => {

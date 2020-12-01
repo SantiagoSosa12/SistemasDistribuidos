@@ -1,5 +1,5 @@
 
-var lista = [];
+var lista = ["Primera Linea"];
 
 const readline = require("readline"),
     fs = require("fs"),

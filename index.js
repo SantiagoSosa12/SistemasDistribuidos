@@ -13,4 +13,4 @@ lector.on("line", linea => {
     lista.push(linea);
 });
 
-console.log(lista.pop);
+console.log(lista[lista.length - 1]);

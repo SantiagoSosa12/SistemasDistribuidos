@@ -4,3 +4,5 @@ var array = fs.readFileSync('/home/serverone/serverStatus/logger.txt').toString(
 for(i in array) {
   console.log(array[i]);
 }
+
+console.log(array[array.length - 1] + " Ultima linea")

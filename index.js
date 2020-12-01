@@ -5,4 +5,4 @@ for(i in array) {
   console.log(array[i]);
 }
 
-console.log(array[array.length - 1] + " Ultima linea")
+console.log(array[array.length - 2] + " Ultima linea")

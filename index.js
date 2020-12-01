@@ -1,19 +1,18 @@
 
 
-const express = require('express')
-const app = express()
-const port = 3000
-const fs= require('fs');
+/serverStatus/logger.txt
 
+const readline = require("readline"),
+    fs = require("fs"),
+    NOMBRE_ARCHIVO = "/serverStatus/logger.txt";
 
-app.get('/', (req, res) => {
-  let archivo = fs.readFileSync('/serverStatus/logger.txt', 'utf-8');
-  console.log(archivo);
-})
+let lector = readline.createInterface({
+    input: fs.createReadStream(NOMBRE_ARCHIVO)
+});
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+lector.on("line", linea => {
+    console.log("Tenemos una línea:", linea);
+});
 
 
 

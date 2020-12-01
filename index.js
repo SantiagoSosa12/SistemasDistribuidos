@@ -1,7 +1,7 @@
 
 const readline = require("readline"),
     fs = require("fs"),
-    NOMBRE_ARCHIVO = "/serverStatus/logger.txt";
+    NOMBRE_ARCHIVO = "/home/serverone/serverStatus/logger.txt";
 
 let lector = readline.createInterface({
     input: fs.createReadStream(NOMBRE_ARCHIVO)
